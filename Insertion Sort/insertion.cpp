@@ -19,8 +19,15 @@ int main(void){
 
     cerr << "Caso Aleatório" << endl;
     show(arr);
-    cerr << "Número de Passos: " << insertionSort(arr) << endl; // Caso Aleatório
+    cerr << " - Número de Passos:   " << insertionSort(arr) << endl; // Caso Aleatório
     show(arr);
+
+    int arrr[] = {1, 4, 6, 8, 2, 7, 5, 15, 13, 11};
+
+    cerr << "Caso Não Aleatório" << endl;
+    show(arrr);
+    cerr << " - Número de Passos:  " << insertionSort(arrr) << endl; // Caso Aleatório
+    show(arrr);
 
     for(int j=0;j<TAM_ARRAY;j++){
         arr[j] = j;
@@ -28,7 +35,7 @@ int main(void){
 
     cerr << "Melhor Caso" << endl;
     show(arr);
-    cerr << "Número de Passos: " << insertionSort(arr) << endl; // Melhor Caso
+    cerr << " - Número de Passos: " << insertionSort(arr) << endl; // Melhor Caso
     show(arr);
 
     for(int k=0;k<TAM_ARRAY;k++){
@@ -38,7 +45,7 @@ int main(void){
 
     cerr << "Pior Caso" << endl;
     show(arr);
-    cerr << "Número de Passos: " << insertionSort(arr) << endl; // Pior Caso
+    cerr << " - Número de Passos: " << insertionSort(arr) << endl; // Pior Caso
     show(arr);
 
     return 0;
