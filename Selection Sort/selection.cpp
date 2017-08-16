@@ -22,6 +22,13 @@ int main(void){
     cerr << "Número de Passos: " << selection(arr) << endl; // Caso Aleatório
     show(arr);
 
+    int arr2[] = {17, 6, 8, 3, 4, 2, 7, 9, 12, 10};
+
+    cerr << "Caso Não Aleatório" << endl;
+    show(arr2);
+    cerr << "Número de Passos: " << selection(arr2) << endl; // Caso Aleatório
+    show(arr2);
+
     for(int j=0;j<tam;j++){
         arr[j] = j;
     }
